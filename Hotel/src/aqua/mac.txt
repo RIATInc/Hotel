@@ -1,0 +1,11 @@
+   try {
+            javax.swing.UIManager.setLookAndFeel("com.birosoft.liquid.LiquidLookAndFeel");
+            com.birosoft.liquid.LiquidLookAndFeel.setLiquidDecorations(true, "mac");
+        } catch (Exception e) {
+        }
+        java.awt.EventQueue.invokeLater(new Runnable() {
+
+            public void run() {
+                new qualification().setVisible(true);
+            }
+        });
