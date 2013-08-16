@@ -7,6 +7,7 @@ package hotel;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
+import java
 
 /**
  *
@@ -87,7 +88,7 @@ public class login extends javax.swing.JFrame {
                 String status = rs.getString("status");
                 System.out.println(status);
                 if (status.equals("manager")) {
-                    new homePage().setVisible(true);
+                    new homePage().setVisible(false);
                     this.dispose();
                 } else if(status.equals("cashier")){
                     new cashier().setVisible(true);
